@@ -1,13 +1,13 @@
 body * {
     font-family: 'Roboto', sans-serif;
     color: rgb(40, 20, 153)
-
 }
 
-.container{
-    max-width:1440px;
-    margin:0 auto;
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
 }
+
 .cams {
     padding: 60px;
     display: flex;
@@ -23,7 +23,6 @@ body * {
 .cam-wrapper {
     border-radius: 10px;
     overflow: hidden;
-
     width: 100%;
 }
 
@@ -59,5 +58,6 @@ body * {
 
 .widget-wrapper {
     margin: 0 auto;
-    max-width: 1440px;;
+    max-width: 1440px;
+    ;
 }
