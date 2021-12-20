@@ -19,30 +19,31 @@
   </head>
   <body>
     <div class="container">
-        <div class="widget-wrapper">
-      <a
-        style="position: absolute imo !important; bottom: 0"
-        class="weatherwidget-io"
-        href="https://forecast7.com/en/42d4844d48/gudauri/"
-        data-label_1="GUDAURI Weather "
-        data-label_2=" Live & Cam"
-        data-theme="dark"
-        data-basecolor="#285099"
-        data-textcolor="#ffffff"
-        data-lowcolor="#ffffff"
-        >GUDAURI WEATHER</a>
-      <script>
-        !(function (d, s, id) {
-          var js,
-            fjs = d.getElementsByTagName(s)[0];
-          if (!d.getElementById(id)) {
-            js = d.createElement(s);
-            js.id = id;
-            js.src = "https://weatherwidget.io/js/widget.min.js";
-            fjs.parentNode.insertBefore(js, fjs);
-          }
-        })(document, "script", "weatherwidget-io-js");
-      </script>
+      <div class="widget-wrapper">
+        <a
+          style="position: absolute imo !important; bottom: 0"
+          class="weatherwidget-io"
+          href="https://forecast7.com/en/42d4844d48/gudauri/"
+          data-label_1="GUDAURI Weather "
+          data-label_2=" Live & Cam"
+          data-theme="dark"
+          data-basecolor="#285099"
+          data-textcolor="#ffffff"
+          data-lowcolor="#ffffff"
+          >GUDAURI WEATHER</a
+        >
+        <script>
+          !(function (d, s, id) {
+            var js,
+              fjs = d.getElementsByTagName(s)[0];
+            if (!d.getElementById(id)) {
+              js = d.createElement(s);
+              js.id = id;
+              js.src = "https://weatherwidget.io/js/widget.min.js";
+              fjs.parentNode.insertBefore(js, fjs);
+            }
+          })(document, "script", "weatherwidget-io-js");
+        </script>
       </div>
 
       <div class="cams">
@@ -61,6 +62,33 @@
           </div>
         </div>
 
+        <div class="cam border">
+          <div class="title">
+            <span>Geo - Rus Border</span>
+          </div>
+          <div class="cam-wrapper">
+            <div
+              class="card-wrapper"
+              style="
+                height: 414px;
+                background-color: rgb(235, 233, 233);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 20px;
+              "
+            >
+              <div>
+                <img id="border-image"
+                src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAAUA
+                AAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO
+                    9TXL0Y4OHwAAAABJRU5ErkJggg=="
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="cam">
           <div class="title">
             <span>Cafe vitamin </span>
@@ -74,7 +102,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                padding:20px;
+                padding: 20px;
               "
             >
               <div>
@@ -103,5 +131,11 @@
         </div>
       </div>
     </div>
+
+    <script language="javascript" type="text/javascript">
+      var d = new Date();
+      document.getElementById("border-image").src =
+        "https://sktu.customs.gov.ru/sktu/webcams/scrin/scrin.jpg?" + d.getTime();
+    </script>
   </body>
 </html>
