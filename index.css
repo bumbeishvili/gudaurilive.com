@@ -1,0 +1,46 @@
+body * {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(40, 20, 153)
+}
+
+.cams {
+    padding: 60px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cams .title {
+    font-size: 40px;
+    margin: 20px;
+}
+
+.cam-wrapper {
+    border-radius: 10px;
+    overflow: hidden;
+    
+   width:100%;
+}
+
+iframe {
+    width: 100%;
+}
+
+.cam{
+    width: max(100%, 600px);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 800px;
+    margin:24px;
+}
+
+.title{
+    width:100%;
+    border-left: hotpink solid 5px;
+}
+
+.title span{
+    margin-left:20px;
+}
