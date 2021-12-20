@@ -1,8 +1,13 @@
 body * {
     font-family: 'Roboto', sans-serif;
     color: rgb(40, 20, 153)
+
 }
 
+.container{
+    max-width:1440px;
+    margin:0 auto;
+}
 .cams {
     padding: 60px;
     display: flex;
@@ -18,29 +23,41 @@ body * {
 .cam-wrapper {
     border-radius: 10px;
     overflow: hidden;
-    
-   width:100%;
-}
 
-iframe {
     width: 100%;
 }
 
-.cam{
-    width: max(100%, 600px);
-    display:flex;
+.cam-wrapper iframe {
+    width: 100%;
+}
+
+.cam {
+    width: max(45%, 400px);
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     max-width: 800px;
-    margin:24px;
+    margin: 24px;
 }
 
-.title{
-    width:100%;
+.title {
+    width: 100%;
     border-left: hotpink solid 5px;
 }
 
-.title span{
-    margin-left:20px;
+.title span {
+    margin-left: 20px;
+}
+
+.weatherwidget-io {
+    border-radius: 7px;
+    overflow: hidden;
+    max-width: 1440px;
+
+}
+
+.widget-wrapper {
+    margin: 0 auto;
+    max-width: 1440px;;
 }

@@ -16,10 +16,35 @@
     <meta name="author" content="Gudauri" />
     <meta name="robots" content="index" />
     <meta name="revisit-after" content="1 day" />
-
   </head>
   <body>
     <div class="container">
+        <div class="widget-wrapper">
+      <a
+        style="position: absolute imo !important; bottom: 0"
+        class="weatherwidget-io"
+        href="https://forecast7.com/en/42d4844d48/gudauri/"
+        data-label_1="GUDAURI Weather "
+        data-label_2=" Live & Cam"
+        data-theme="dark"
+        data-basecolor="#285099"
+        data-textcolor="#ffffff"
+        data-lowcolor="#ffffff"
+        >GUDAURI WEATHER</a>
+      <script>
+        !(function (d, s, id) {
+          var js,
+            fjs = d.getElementsByTagName(s)[0];
+          if (!d.getElementById(id)) {
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "https://weatherwidget.io/js/widget.min.js";
+            fjs.parentNode.insertBefore(js, fjs);
+          }
+        })(document, "script", "weatherwidget-io-js");
+      </script>
+      </div>
+
       <div class="cams">
         <div class="cam carpe-diem">
           <div class="title">
@@ -38,12 +63,18 @@
 
         <div class="cam">
           <div class="title">
-            <span>Cafe vitamin live stream</span>
+            <span>Cafe vitamin </span>
           </div>
           <div class="cam-wrapper">
             <div
               class="card-wrapper"
-              style="height: 454px; background-color: lightgray;display:flex;justify-content: center;align-items: center;"
+              style="
+                height: 454px;
+                background-color: rgb(235, 233, 233);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              "
             >
               <div>
                 <a
