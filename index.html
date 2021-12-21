@@ -16,6 +16,12 @@
     <meta name="author" content="Gudauri" />
     <meta name="robots" content="index" />
     <meta name="revisit-after" content="1 day" />
+    <script>
+  console.log(location)
+  if (!location.host.includes('localhost') && location.protocol !== 'https:') {
+    location.replace(`https:${location.href.substring(location.protocol.length)}`);
+  }
+</script>
   </head>
   <body>
     <div class="container">
