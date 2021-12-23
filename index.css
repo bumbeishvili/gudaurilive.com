@@ -84,3 +84,20 @@ body * {
 img {
     max-width: 100%;
 }
+
+.airbnb-listings .links a {
+    background-color: rgb(40, 20, 153);
+    margin-right: 20px;
+    margin-left: 10px;
+    padding: 20px;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;;
+
+}
+
+.airbnb-listings .links span {
+    color: white;
+
+}
